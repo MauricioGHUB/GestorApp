@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 interface Actividad {
   titulo: string;
@@ -14,7 +15,7 @@ interface Actividad {
 export class Tab2Page implements OnInit {
   actividades: Actividad[] = [];
 
-  constructor() {
+  constructor(private menucontroller:MenuController) {
     this.actividades = [
       {
         titulo: 'Conferencia Angular',
@@ -67,4 +68,7 @@ export class Tab2Page implements OnInit {
 
   ngOnInit() {}
 
+  mostrarMenu(){
+    this.menucontroller.open('first');
+  }
 }

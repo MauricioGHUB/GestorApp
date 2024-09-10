@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab4Page implements OnInit {
 
-  constructor() { }
+  constructor(private menucontroller:MenuController) { }
 
   ngOnInit() {
   }
 
+  mostrarMenu(){
+    this.menucontroller.open('first');
+  }
 }
