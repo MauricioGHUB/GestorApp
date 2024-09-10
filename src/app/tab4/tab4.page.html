@@ -1,0 +1,27 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-title>Escanear QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="qr-scanner-container">
+    <ion-text color="dark">
+      <h6>Asegurate de darle permisos a la aplicación y de mantener una iluminación buena para la legibilidad del código QR</h6>
+    </ion-text>
+    <div class="qr-scanner">
+      <ion-icon name="qr-code-outline" size="large"></ion-icon>
+    </div>
+    
+    <div id="cameraPreview" class="camera-preview">
+    </div>
+
+    <ion-text color="primary">
+      <h2>Posiciona el código QR dentro del recuadro</h2>
+    </ion-text>
+
+    <ion-button expand="full" color="primary" >
+      Detener escaneo
+    </ion-button>
+  </div>
+</ion-content>

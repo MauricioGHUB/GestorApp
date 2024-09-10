@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/tabs/tab1" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Modificar Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="edit-profile-content">
+  <div class="profile-header">
+    <ion-avatar class="profile-avatar">
+      <img src="{{ usuario.fotoPerfil }}" alt="Foto de Perfil">
+    </ion-avatar>
+    <ion-button fill="outline" expand="block" class="upload-btn">
+      Cambiar Foto
+    </ion-button>
+  </div>
+
+  <form [formGroup]="perfilForm" (ngSubmit)="confirmarCambios()">
+    <ion-item>
+      <ion-label position="stacked" class="input-label">Nombre</ion-label>
+      <ion-input type="text" formControlName="nombre" class="input-field"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked" class="input-label">Apellido</ion-label>
+      <ion-input type="text" formControlName="apellido" class="input-field"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked" class="input-label">Nombre de Usuario</ion-label>
+      <ion-input type="text" formControlName="nombreUsuario" class="input-field"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" shape="round" type="submit" class="save-btn">
+      Guardar Cambios
+    </ion-button>
+  </form>
+
+  <ion-alert
+    id="confirmation-alert"
+    header="Confirmación"
+    message="¿Estás seguro de que deseas guardar los cambios?"
+    buttons="['Cancelar', 'Confirmar']"
+    [buttons]="alertButtons"
+  ></ion-alert>
+</ion-content>

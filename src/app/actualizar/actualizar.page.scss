@@ -1,0 +1,59 @@
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .edit-profile-content {
+    padding: 20px;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-avatar {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007BFF; 
+    overflow: hidden;
+  }
+  
+  .upload-btn {
+    margin-top: 15px;
+    color: #007BFF;
+    --border-color: #007BFF;
+  }
+  
+  ion-item {
+    background: #1A1A1A;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+  }
+  
+  .input-label {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    color: #FFFFFF; 
+  }
+  
+  .save-btn {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  

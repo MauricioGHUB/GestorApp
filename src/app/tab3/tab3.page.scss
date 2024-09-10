@@ -1,0 +1,28 @@
+ion-button {
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --border-radius: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.info-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.qr-container img {
+  width: 275px;
+  height: 275px;
+}
